@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  @font-face {
+    font-family: "raleway";
+    src: url(./fonts/KumbhSans-VariableFont_wght.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: "raleway-B";
+    src: url(./fonts/static/KumbhSans-Bold.ttf) format('truetype');
+  }
+  
+  
+  .logo{
+      padding: 60px 0 0 160px;
+  }
+
+  ul{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      left: 28%;
+      top: 9%; 
+    }
+  ul li {
+      padding: 0 20px;
+      font-family: raleway;
+  }
+
+  .header-right{
+    display: flex;
+    justify-content: end;
+    
+  }
+  .fa-cart-shopping{
+    position: absolute;
+    right: 21%;
+    top: 10%;
+    font-size: 19px;
+  }
+  .user{
+    position: absolute;
+    right: 15%;
+    top: 7%;
+    object-fit: cover;
+    width: 50px;
+
+  }
+  hr{
+    position: absolute;
+    top:20%;
+    left: 10%;
+    width: 75%;
+    opacity: 0.5;
+  }
+  .shoes {
+    margin: 115px 0 0 142px;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .gallary{
+    display: flex;
+    margin-left: 120px;
+    cursor: pointer;
+  }
+ 
+  .shoespdts{
+    margin: 18px 0 36px 24px;
+    border-radius: 11px;
+    width:8%;
+    height: 9%;
+  }
+
+  .shoespdts:hover{
+    border: 1px solid orange;
+    opacity: 0.5;}
+
+
+
+    .check{
+        position: absolute;
+        left: 50%;
+        top: 35%;
+    }
+    .title{
+        color: hsl(26, 100%, 55%);
+        font-size: 13px;
+        font-family:"raleway";
+    }
+    
+    h1{
+        font-family:"raleway-B";
+        padding: 10px 0;
+        font-size: 36px;
+    }
+
+    p{
+        padding: 20px 0;
+        font-size: 14px;
+        opacity: 0.5;
+        font-family:"raleway";
+    }
+
+    .price{
+        font-size: 18px;
+        font-family:"raleway-B";
+    }
+    .sold{
+        font-size: 13px;
+        padding: 4px;
+        border-radius: 5px;
+        margin-left: 10px;
+        color:hsl(26, 100%, 55%); 
+        background-color: hsl(25, 100%, 94%);
+    }
+
+    input{
+        border: none;
+        text-align: center;
+        background-color: hsl(223, 64%, 98%);
+        
+    }
+    .counter {
+        background-color: hsl(223, 64%, 98%);
+        margin-right: 450px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+   .down{
+    color:hsl(26, 100%, 55%); 
+    font-weight: 900;
+   }
+   .up{
+    color:hsl(26, 100%, 55%); 
+    font-weight: 900;
+   }
+
+   .addtocart{
+    position: absolute;
+    padding: 10px 60px;
+    background-color:hsl(26, 100%, 55%); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    left: 38%;
+    top: 88%;
+    font-family:"raleway-B";
+    cursor: pointer;
+   }
+   .shop{
+    
+    position: absolute;
+    right: 75%;
+    top: auto;
+   }

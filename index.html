@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/14423d9cd0.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <main>
+        <header>
+           
+            <img src="images/logo.svg" class="logo" alt="Logo">
+        
+            <nav>
+                <ul class="nav-bar">
+                    <li>Collections</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <img src="images/image-avatar.png"  class="user" alt="User">
+            </div>
+        </header>
+        <hr>
+        <section class="product">
+            <img src="/images/image-product-1.jpg" name="change" class="shoes" alt="shoes">
+
+        <div class="gallary">
+            <img onclick="change.src=this.src" src="/images/image-product-2.jpg" class="shoespdts" alt="shoes">
+            <img onclick="change.src=this.src" src="/images/image-product-3.jpg" class="shoespdts" alt="shoes">
+            <img onclick="change.src=this.src" src="/images/image-product-4.jpg" class="shoespdts" alt="shoes">
+            <img onclick="change.src=this.src" src="/images/image-product-1.jpg" class="shoespdts" alt="shoes">
+        </div>
+        </section>
+
+        <section class="check">
+            <div class="block">
+            <span class="title">SNEAKER COMPANY</span>
+            <h1>Fall Limited Edition <br> Sneakers</h1>
+            <p>These low-profile sneakers are your perfct causal waer companion. <br> Featuring a durablme rubber outer sole,they'll withstand everything the weather can offer.</p>
+
+            <div class="price">
+                <span>$125.00</span>
+                <span class="sold">50%</span>
+                <p class="oldprice"><s>$250.00</s></p>
+            </div>
+
+            <div class="command">
+                
+                <div class="counter">
+                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1">
+                    <span class="up"  onClick='increaseCount(event, this)'>+</span>
+                </div>
+
+                <button class="addtocart"> <i class="fa-solid fa-cart-shopping shop"></i> Add to cart</button>
+            </div>
+        </section>
+    </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
